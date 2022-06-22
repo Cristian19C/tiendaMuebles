@@ -7,13 +7,14 @@ body{
 }
 
 .main-header{
-    padding: 0 20px;
+    padding: 0px 20px;
     top: 0;
     left: 0;
     width: 100%;
     height: 80px;
     position: fixed;
-    background: white;
+    background: red;
+    z-index: 230;
     display: table;
 
 }
@@ -24,3 +25,35 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+
+.main-header__txt{
+    color: blue;
+    display: block;
+}
+
+.main-header__link{
+    text-decoration: none;
+}
+
+.main-nav{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.9s;
+    z-index: 9999;
+}
+
+.menu{
+    position: absolute;
+    top: 91px;
+    
+}
+
+.icon-menu{
+    font-size: 1.5em;
+    display: block;
+    padding: 5px 5px;
+    margin-right: auto;
+    cursor: pointer;
+
+}
+
