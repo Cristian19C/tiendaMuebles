@@ -156,7 +156,7 @@ body{
 }
 
 .main{
-    padding: 0 6px;
+    padding: 0 12px;
 }
 
 .container-products{
@@ -199,7 +199,7 @@ body{
 .product__title{
     text-align: left;
     margin-left: 40px;
-    margin-top: -7 px;
+    margin-top: -7px;
     margin-bottom: 7px;
 }
 
@@ -214,16 +214,23 @@ body{
     margin-bottom: -10px;
 }
 
+.favoritos__txt{
+    margin-bottom: 50px;
+}
+
 .container__favoritos{
+    cursor: pointer;
     position: relative;
     /* left: 10px; */
     top: -200px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0px;
+    grid-gap: 3px;
 }
 
 .favoritos{
+    padding-right: 14px;
+    padding-left: 12px;
     text-align: center;
     position: relative;
 }
@@ -231,13 +238,46 @@ body{
 
 .caja__img{
     width: 100%;
-    height: 170px;
+    height: 270px;
     object-fit: cover;
-    overflow: hidden
+}
+
+.favoritos__descripcion{
+    display: flex;
+    width: 100%;
+
+}
+
+.favoritos__nombre{
+    padding: 8px 0px;
+    width: 50%;
+    height: 40px;
+    border: 1px solid rgba(209, 208, 208, 1);
+    position: relative;
+    top: -19.5px; 
+    background: rgba(209, 208, 208, 0.4);
+}
+
+.favoritos__precio{
+    padding: 8px 0px;
+    width: 50%;
+    height: 40px;
+    border: 1px solid rgba(209, 208, 208, 1);
+    position: relative;
+    top:-19.5px;
+    background: rgba(209, 208, 208, 0.4);
+}
+
+.favoritos__nombre:hover{
+    background: rgb(226, 69, 69);
+    border: 1px solid rgb(226, 69, 69)
+}
+
+.favoritos__precio:hover{
+    background: rgb(226, 69, 69);
+    border: 1px solid rgb(226, 69, 69)
 }
 
 
-.caja2__img{
-    width: 0;
-    height: 0;
-}
+
+
