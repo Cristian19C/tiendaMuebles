@@ -54,8 +54,12 @@ body{
 }
 
 .menu{
+    background-color: white;
     position: absolute;
+    left: 0px;
     top: 91px;
+    /* height: 100%; */
+    z-index: 100;
 }
 
 .icon-menu{
