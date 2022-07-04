@@ -54,13 +54,17 @@ body{
 }
 
 .menu{
-    background-color: white;
     position: absolute;
-    left: 0px;
-    top: 91px;
-    /* height: 100%; */
-    z-index: 100;
+    top: 180px;
+    left: 0;
+    background: white;
+    width: 70%;
+    list-style: none;
+    padding: 0px;
+    margin: 0;
 }
+
+
 
 .icon-menu{
     font-size: 1.3em;
