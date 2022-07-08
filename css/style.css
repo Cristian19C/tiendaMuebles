@@ -175,8 +175,7 @@ body{
 }
 
 .main{
-    /* padding: 0 10%; */
-    margin: 0 4% 0 4%;
+    margin: 0 4.5% 0 4.5%;
 }
  
 .container-products{
@@ -307,8 +306,6 @@ body{
     overflow: hidden;
     transition: all 500ms ease;
 }
-
-
 
 .ubicacion__img{
     width: 100%;
@@ -461,6 +458,10 @@ body{
 }
 
 @media screen and (min-width:820px) {
+    .main{
+        margin: 0 5% 0 5%;
+    }
+
     .container-products{
         position: relative;
         top: -220px; 
@@ -567,8 +568,137 @@ body{
         margin-bottom: 20px;
     }
 
-    .caja__img{
-        height: 450px;
+    
+    .container__favoritos{
+        grid-template-columns: repeat(4, 1fr);
+        
     }
     
+    .caja__img{
+        height: 300px;
+    }
+
+    .container__redes{
+        position: relative;
+        /* top: -220px;  */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    .ubicacion__description{
+        position: absolute;
+        font-size: 1.4em;
+        top: 70%;
+        font-weight: bolder;
+        left: 25%;
+        color: white;
+        transform: translate(-50%, -140%);
+        width: 60%;
+        text-align: center;
+    }
+    
+    .ubicacion__link{
+        text-decoration: none;
+        color: white;
+    
+    }
+    
+    .facebook__description{
+        font-size: 1.4em;
+        top: 0%;
+        left: 75%;
+        transform: translate(-50%, 62%);
+       
+    }
+    
+}
+
+@media  screen and (min-width: 1280px) {
+    .container-products{
+        top: -320px; 
+    }
+
+    .product{
+        margin-bottom: -20px;
+    }
+
+    .container__figure{
+        height: 550px;
+
+    }
+    
+    .container__img{
+        height: 550px;
+    }
+    
+    .product__title{
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+    
+}
+
+@media screen and (min-width: 1400px) {
+
+    .product{
+        margin-bottom: -40px;
+    }
+
+    .container__figure{
+        height: 600px;
+
+    }
+    
+    .container__img{
+        height: 600px;
+    }
+    
+    .product__title{
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    .container__favoritos{
+        margin-bottom: 30px;
+    }
+
+    .caja__img{
+        height: 500px;
+    }
+
+    .container__redes{
+        margin-bottom: 60px;
+    }
+
+    .container__ubicacion{
+        height: 550px;
+    }
+
+    .ubicacion__img{
+        height: 550px;
+    }
+
+    .container__facebook{
+        height: 550px;
+    }
+
+    .facebook__img{
+        height: 550px;
+    }
+
+    .facebook__description{
+        font-size: 1.4em;
+        top: 25%;
+        left: 75%;
+        transform: translate(-50%, 62%);
+    }
+
+    .slider{
+        height: 950px;
+    }
+    
+    .slider:before{
+        height: 646px;
+    }
 }
