@@ -38,3 +38,5 @@ function evento3(sw){
     document.getElementById('efecto4').src = pic;
 }
 
+
+
