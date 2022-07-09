@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/contacto.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
     <title>Contacto | Sogamoso</title>
 </head>
@@ -36,9 +37,33 @@
     </header>
 
     <main class="main">
-        <div class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15879.764620296255!2d-72.94393866414524!3d5.721616734503422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a45cdf4946d51%3A0xd80d36b75cda814!2sCra.%2021%2C%20Sogamoso%2C%20Boyac%C3%A1!5e0!3m2!1ses!2sco!4v1657332870268!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="container__informacionContacto">
+            <div class="container__mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15879.764620296255!2d-72.94393866414524!3d5.721616734503422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a45cdf4946d51%3A0xd80d36b75cda814!2sCra.%2021%2C%20Sogamoso%2C%20Boyac%C3%A1!5e0!3m2!1ses!2sco!4v1657332870268!5m2!1ses!2sco"
+                class="mapa__img"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="informacion__contacto">
+                <h1 class="title__informacion">Contacto</h1>  
+                <h3 class="subtitulo__informacion">Dirección</h3>
+                <p class="informacion__txt">Calle 21 norte # 5-87</p>
+                <p class="informacion__txt">Sogamoso, Boyacá</p>
+                <p class="informacion__txt">Horario: 8:00 - 18:00</p>
+                <h3 class="subtitulo__informacion">Email</h3>
+                <p class="informacion__txt">mueblesSogamoso@gamil.com</p>
+                <h3 class="subtitulo__informacion">Teléfono</h3>
+                <p class="informacion__txt">+57 32425568566</p>
+            </div>
         </div>
+
+        <form action="" class="formulario" method="post">
+            <h2 class="formulario__title">Contáctenos</h2>
+            <input type="text" class="formulario__input" name="nombre" placeholder="Digite su nombre" required>
+            <input type="text" class="formulario__input" name="correo" placeholder="Digite su correo" required>
+            <input type="text" class="formulario__input" name="telefono" placeholder="Digite su telefono" required>
+            <textarea name="mensaje" class="formulario__textArea" placeholder="
+            Digite su mensaje" required></textarea>
+            <input type="submit" class="formulario__input" value="ENVIAR"  id="boton">
+        </form>
     </main>
 
     <footer class="container__footer">
