@@ -16,3 +16,21 @@ window.addEventListener('click', (e)=>{
     }
 })
 
+/*Funcionalidad para el sub menu*/
+
+const menu = document.querySelector('.icon__subMenu');
+const mostrarSubMenu = document.querySelector('.sub__nav');
+
+console.log(menu);
+console.log(mostrarSubMenu);
+
+menu.addEventListener('click', ()=>{
+    mostrarSubMenu.classList.toggle('spread');
+})
+
+window.addEventListener('click', (e)=>{
+    if(mostrarSubMenu.classList.contains('spread')&& e.target != mostrarSubMenu && e.target != menu){
+        mostrarSubMenu.classList.toggle('spread');
+    }
+})
+
