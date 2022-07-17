@@ -1,5 +1,14 @@
+
 *{
     box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
 }
 
 body{
@@ -28,11 +37,11 @@ body{
 
 .main-header__txt{
     position: absolute;
-    padding: 15px 0px 0px 0px;
+    padding: 17px 0px 0px 0px;
     left: 45%;
     color: black;
     margin: auto;
-    font-weight: 1.1;
+    font-weight: 500;
     /* padding-left: 200px; */
     /* display: block; */
 }
@@ -70,6 +79,40 @@ body{
 .menu__link{
     text-decoration: none;
     color: black;
+    width: fit-content;
+    z-index: 0;
+    transition: all 450ms ease;
+    position: relative;
+}
+
+.menu__link::after{
+    content: '';
+    position: absolute;
+    transition: width 540ms, opacity 300ms ease
+}
+
+.menu__link::before{
+    content: '';
+    position: absolute;
+    transition: width 540ms, opacity 300ms ease;
+}
+
+.menu__link::before{
+    content: attr(data);
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: rgb(0, 141, 235);
+    z-index: 1;
+    overflow: hidden;
+    text-shadow: 0 0 2px rgb(0, 141, 235);
+    transition: all 480ms ease-in-out;
+}
+
+.menu__link:hover::before{
+    width: 100%;
+    color: rgb(0, 141, 235);
 }
 
 .menu__item{
@@ -153,7 +196,7 @@ body{
     position: absolute;
     width: 50px;
     height: 50px;
-    background: white;
+    background: rgba(0, 0, 0, .5);
     top: 50%;
     transform: translateY(-210%);
     font-size: 30px;
@@ -163,8 +206,10 @@ body{
     cursor: pointer;
     border-radius: 50%;
     z-index: 150;
-    color: rgb(202, 50, 50);
+    color: white;
 }
+
+
 
 .slider__btn-right{
     right: 20px;
@@ -290,6 +335,31 @@ body{
     position: relative;
     top: -19.8px; 
     background: rgba(209, 208, 208, 0.4);
+    outline: none;
+    z-index: 1;
+    transition: all .50s;
+}
+
+.favoritos__nombre::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to left, rgb(0, 141, 235), rgb(0, 141, 235) );
+    transition: all .50s;
+    z-index: -1;
+}
+
+.favoritos__nombre:hover{
+    border: 1px solid rgb(0, 141, 235);
+    color: white;
+}
+
+.favoritos__nombre:hover::before{
+    border: 1px solid linear-gradient(to left, rgb(0, 141, 235), rgb(0, 141, 235) );
+    height: 100%;
 }
 
 .favoritos__precio{
@@ -301,16 +371,31 @@ body{
     top:-19.8px;
     background: rgba(209, 208, 208, 0.4);
     border-left: 1px solid transparent;
+    outline: none;
+    z-index: 1;
+    transition: all .50s;
 }
 
-.favoritos__nombre:hover{
-    background: rgb(226, 69, 69);
-    border: 1px solid rgb(226, 69, 69)
+.favoritos__precio::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to left, rgb(0, 141, 235), rgb(0, 141, 235) );
+    transition: all .50s;
+    z-index: -1;
 }
 
 .favoritos__precio:hover{
-    background: rgb(226, 69, 69);
-    border: 1px solid rgb(226, 69, 69)
+    border: 1px solid rgb(0, 141, 235);
+    color: white;
+}
+
+.favoritos__precio:hover::before{
+    border: 1px solid linear-gradient(to left, rgb(0, 141, 235), rgb(0, 141, 235) );
+    height: 100%;
 }
 
 .container__redes{
@@ -318,6 +403,7 @@ body{
     top: -80px;
     position: relative;
     overflow: hidden;
+    margin-bottom: 50px;
 }
 
 .container__ubicacion{
@@ -393,8 +479,6 @@ body{
 }
 
 .container__footer{
-    position: relative;
-    top: 18px;
     text-align: center;
     background: rgba(0,0,0,0.8);
     margin-top: -80px;
@@ -636,7 +720,7 @@ body{
 
 @media  screen and (min-width: 1280px) {
     .container-products{
-        top: -320px; 
+        top: -250px; 
     }
 
     .product{
@@ -660,6 +744,9 @@ body{
 }
 
 @media screen and (min-width: 1400px) {
+    .container-products{
+        top: -310px; 
+    }
 
     .product{
         margin-bottom: -40px;

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/asientos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <title>Asientos | Sogamoso</title>
 </head>
 <body>
@@ -24,13 +25,13 @@
             <span class="icon-cart"><i class="fa-solid fa-cart-plus"></i></span>
             </div>
             <nav class="main-nav">
-                    <li class="menu__item"><a href="/index.html" class="menu__link">Inicio</a></li>
-                    <li class="menu__item"><a href="/public/asientos.html" class="menu__link">Asientos</a></li>
-                    <li class="menu__item"><a href="/public/mesas.html" class="menu__link">Mesas</a></li>
-                    <li class="menu__item"><a href="/public/sofas.html" class="menu__link">Sofás</a></li>
-                    <li class="menu__item"><a href="/public/muebles.html" class="menu__link">Muebles</a></li>
-                    <li class="menu__item"><a href="/public/nosotros.html" class="menu__link">Nosotros</a></li>
-                    <li class="menu__item"><a href="/public/contacto.html" class="menu__link">Contacto</a></li>
+                <li class="menu__item"><a href="/index.html" class="menu__link" data="Inicio">Inicio</a></li>
+                <li class="menu__item"><a href="/public/asientos.html" class="menu__link" data="Asientos">Asientos</a></li>
+                <li class="menu__item"><a href="/public/mesas.html" class="menu__link" data="Mesas">Mesas</a></li>
+                <li class="menu__item"><a href="/public/sofas.html" class="menu__link" data="Sofás">Sofás</a></li>
+                <li class="menu__item"><a href="/public/muebles.html" class="menu__link" data="Muebles">Muebles</a></li>
+                <li class="menu__item"><a href="/public/nosotros.html" class="menu__link" data="Nosotros">Nosotros</a></li>
+                <li class="menu__item"><a href="/public/contacto.html" class="menu__link" data="Contacto">Contacto</a></li>
             </nav>
         </div>
         </div> 
@@ -40,19 +41,20 @@
             <div class="fondo__sillas">
                 <img src="/img/Asientos/slider.jpg" alt="" class="fondo__img">
                 <div class="description__fondo">
-                    <a href="/index.html" class="link__fondo">Inicio</a>
+                    <a href="/index.html" class="link__fondo prueba__efecto">Inicio</a>
                     <p class="txt">/</p>
                     <a href="/public/asientos.html" class="link__fondo">Asientos</a>
                     <i class='bx bx-left-arrow-alt'></i>
                 </div>
                 <div class="subDescription__fondo">
                     <i class="fa-solid fa-arrow-left-long"></i>
-                    <p class="fondo__txt">Asientos</p>
+                    <h4 class="fondo__txt">Asientos</h4>
                 </div>
 
             </div>
         </div>
         <!-- Sección de productos -->
+        <!-- <i class="fa-solid fa-bars menu__segundario"></i> -->
         <div class="container-btn">
             <div class="icon__subMenu"></div>
             <div class="icon__txt">Nuestros asientos</div>
@@ -61,16 +63,16 @@
             <div class="container__productos">
                 <div class="subMenu">
                     <nav class="sub__nav">
-                        <li class="sub__item"><a href="" class="sub__link principal">Asientos</a></li>
-                        <li class="sub__item"><a href="" class="sub__link">Asientos de de barra</a></li>
-                        <li class="sub__item"><a href="" class="sub__link">Bancaas</a></li>
-                        <li class="sub__item"><a href="" class="sub__link">Sillas</a></li>
-                        <li class="sub__item"><a href="" class="sub__link principal">Mesas</a></li>
-                        <li class="sub__item"><a href="" class="sub__link">Mesas de centro</a></li>
-                        <li class="sub__item"><a href="" class="sub__link">Escritorios</a></li>
-                        <li class="sub__item"><a href="" class="sub__link">Mesas de comedor</a></li>
-                        <li class="sub__item"><a href="" class="sub__link principal">Sófas</a></li>
-                        <li class="sub__item"><a href="" class="sub__link principal">Muebles</a></li>
+                        <li class="sub__item"><a href="/public/asientos.html" class="sub__link principal" data="Asientos">Asientos</a></li>
+                        <li class="sub__item"><a href="/public/Asientos/asientosBarra.html" class="sub__link" data="Asientos de barra">Asientos de barra</a></li>
+                        <li class="sub__item"><a href="/public/Asientos/asientosBancas.html" class="sub__link" data="Bancas">Bancas</a></li>
+                        <li class="sub__item"><a href="/public/Asientos/asientosSillas.html" class="sub__link" data="Sillas">Sillas</a></li>
+                        <li class="sub__item"><a href="/public/mesas.html" class="sub__link principal" data="Mesas">Mesas</a></li>
+                        <li class="sub__item"><a href="/public/Mesas/mesasCentro.html" class="sub__link" data="Mesas de centro">Mesas de centro</a></li>
+                        <li class="sub__item"><a href="/public/Mesas/escritorios.html" class="sub__link" data="Escritorios">Escritorios</a></li>
+                        <li class="sub__item"><a href="/public/Mesas/mesasComedor.html" class="sub__link" data="Mesas de comedor">Mesas de comedor</a></li>
+                        <li class="sub__item"><a href="/public/sofas.html" class="sub__link principal" data="Sófas">Sófas</a></li>
+                        <li class="sub__item"><a href="/public/muebles.html" class="sub__link principal" data="Muebles">Muebles</a></li>
                     </nav>
                 </div>
             </div>
@@ -79,7 +81,7 @@
                 <!-- Asientos -->
                 <!-- 1 -->
                 <div class="asientos favoritos">
-                    <img id="efecto" src="/img/Asientos/asiento_1.jpg" alt="" onmousemove="evento(1)" onmouseleave="evento(2)" class="caja__img">
+                    <img id="efecto" src="/img/Asientos/imagen_1.jpg" alt="" onmousemove="productosCambio(1)" onmouseleave="productosCambio(2)" class="caja__img">
                     <div class="favoritos__descripcion">
                         <p class="asientos__nombre">Silla Vick</p>
                         <p class="asientos__precio">$100.000</p>
@@ -87,7 +89,7 @@
                 </div>
                 <!-- 2 -->
                 <div class="asientos favoritos">
-                    <img id="efecto1" src="/img/Asientos/asiento_2.jpg" alt="" onmousemove="evento(3)" onmouseleave="evento(4)" class="caja__img">
+                    <img id="efecto1" src="/img/Asientos/imagen_2.jpg" alt="" onmousemove="productosCambio(3)" onmouseleave="productosCambio(4)" class="caja__img">
                     <div class="favoritos__descripcion">
                         <p class="asientos__nombre">Silla Vick</p>
                         <p class="asientos__precio">$100.000</p>
@@ -95,7 +97,7 @@
                 </div>
                 <!-- 3 -->
                 <div class="asientos favoritos">
-                    <img id="efecto2" src="/img/Asientos/asiento_3.jpg" alt="" onmousemove="evento(5)" onmouseleave="evento(6)" class="caja__img">
+                    <img id="efecto2" src="/img/Asientos/imagen_3.jpg" alt="" onmousemove="productosCambio(5)" onmouseleave="productosCambio(6)" class="caja__img">
                     <div class="favoritos__descripcion">
                         <p class="asientos__nombre">Silla Vick</p>
                         <p class="asientos__precio">$100.000</p>
@@ -103,7 +105,7 @@
                 </div>
                 <!-- 4 -->
                 <div class="asientos favoritos">
-                    <img id="efecto3" src="/img/Asientos/asiento_4.jpg" alt="" onmousemove="evento(7)" onmouseleave="evento(8)" class="caja__img">
+                    <img id="efecto3" src="/img/Asientos/imagen_4.jpg" alt="" onmousemove="productosCambio(7)" onmouseleave="productosCambio(8)" class="caja__img">
                     <div class="favoritos__descripcion">
                         <p class="asientos__nombre">Silla Vick</p>
                         <p class="asientos__precio">$100.000</p>
@@ -111,7 +113,7 @@
                 </div>
                 <!-- 5 -->
                 <div class="asientos favoritos">
-                    <img id="efecto3" src="/img/Asientos/asiento_4.jpg" alt="" onmousemove="evento(7)" onmouseleave="evento(8)" class="caja__img">
+                    <img id="efecto4" src="/img/Asientos/imagen_4.jpg" alt="" onmousemove="productosCambio(9)" onmouseleave="productosCambio(10)" class="caja__img">
                     <div class="favoritos__descripcion">
                         <p class="asientos__nombre">Silla Vick</p>
                         <p class="asientos__precio">$100.000</p>
@@ -119,7 +121,7 @@
                 </div>
                 <!-- 6 -->
                 <div class="asientos favoritos">
-                    <img id="efecto3" src="/img/Asientos/asiento_4.jpg" alt="" onmousemove="evento(7)" onmouseleave="evento(8)" class="caja__img">
+                    <img id="efecto5" src="/img/Asientos/imagen_4.jpg" alt="" onmousemove="productosCambio(11)" onmouseleave="productosCambio(12)" class="caja__img">
                     <div class="favoritos__descripcion">
                         <p class="asientos__nombre">Silla Vick</p>
                         <p class="asientos__precio">$100.000</p>
@@ -127,7 +129,7 @@
                 </div>
                 <!-- 7 -->
                 <div class="asientos favoritos">
-                    <img id="efecto3" src="/img/Asientos/asiento_4.jpg" alt="" onmousemove="evento(7)" onmouseleave="evento(8)" class="caja__img">
+                    <img id="efecto6" src="/img/Asientos/imagen_4.jpg" alt="" onmousemove="productosCambio(13)" onmouseleave="productosCambio(14)" class="caja__img">
                     <div class="favoritos__descripcion">
                         <p class="asientos__nombre">Silla Vick</p>
                         <p class="asientos__precio">$100.000</p>
@@ -135,7 +137,7 @@
                 </div>
                 <!-- 8 -->
                 <div class="asientos favoritos">
-                    <img id="efecto3" src="/img/Asientos/asiento_4.jpg" alt="" onmousemove="evento(7)" onmouseleave="evento(8)" class="caja__img">
+                    <img id="efecto7" src="/img/Asientos/imagen_4.jpg" alt="" onmousemove="productosCambio(15)" onmouseleave="productosCambio(16)" class="caja__img">
                     <div class="favoritos__descripcion">
                         <p class="asientos__nombre">Silla Vick</p>
                         <p class="asientos__precio">$100.000</p>
@@ -143,7 +145,7 @@
                 </div>
                 <!-- 9 -->
                 <div class="asientos favoritos">
-                    <img id="efecto3" src="/img/Asientos/asiento_4.jpg" alt="" onmousemove="evento(7)" onmouseleave="evento(8)" class="caja__img">
+                    <img id="efecto8" src="/img/Asientos/imagen_4.jpg" alt="" onmousemove="productosCambio(17)" onmouseleave="productosCambio(18)" class="caja__img">
                     <div class="favoritos__descripcion">
                         <p class="asientos__nombre">Silla Vick</p>
                         <p class="asientos__precio">$100.000</p>
@@ -151,7 +153,7 @@
                 </div>
                 <!-- 10 -->
                 <div class="asientos favoritos">
-                    <img id="efecto3" src="/img/Asientos/asiento_4.jpg" alt="" onmousemove="evento(7)" onmouseleave="evento(8)" class="caja__img">
+                    <img id="efecto9" src="/img/Asientos/imagen_4.jpg" alt="" onmousemove="productosCambio(19)" onmouseleave="productosCambio(20)" class="caja__img">
                     <div class="favoritos__descripcion">
                         <p class="asientos__nombre">Silla Vick</p>
                         <p class="asientos__precio">$100.000</p>
@@ -159,7 +161,7 @@
                 </div>
                 <!-- 11 -->
                 <div class="asientos favoritos">
-                    <img id="efecto3" src="/img/Asientos/asiento_4.jpg" alt="" onmousemove="evento(7)" onmouseleave="evento(8)" class="caja__img">
+                    <img id="efecto10" src="/img/Asientos/imagen_4.jpg" alt="" onmousemove="productosCambio(21)" onmouseleave="productosCambio(22)" class="caja__img">
                     <div class="favoritos__descripcion">
                         <p class="asientos__nombre">Silla Vick</p>
                         <p class="asientos__precio">$100.000</p>
@@ -167,7 +169,7 @@
                 </div>
                 <!-- 12 -->
                 <div class="asientos favoritos">
-                    <img id="efecto3" src="/img/Asientos/asiento_4.jpg" alt="" onmousemove="evento(7)" onmouseleave="evento(8)" class="caja__img">
+                    <img id="efecto11" src="/img/Asientos/imagen_4.jpg" alt="" onmousemove="productosCambio(23)" onmouseleave="productosCambio(24)" class="caja__img">
                     <div class="favoritos__descripcion">
                         <p class="asientos__nombre">Silla Vick</p>
                         <p class="asientos__precio">$100.000</p>
@@ -179,7 +181,9 @@
         <!-- <p class="btn">boton</p> -->
 
     </main>
-        <footer class="container__footer footer__asientos">
+
+    <div class="division__footer"></div>
+        <footer class="container__footer">
             <div class="container__redes-sociales">
                 <h2 class="redes__title">Siguenos en nuestras redes sociales</h2>
                 <a href="" class="icon__link"><i class="fa-brands fa-facebook-f"></i></a>
@@ -190,5 +194,6 @@
             </div>
         </footer>
     <script src="/js/menu.js"></script>
+    <script src="/js/cambioImagenes.js"></script>
 </body>
 </html>

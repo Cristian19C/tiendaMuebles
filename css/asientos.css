@@ -41,6 +41,17 @@
     margin-right: 30px;
 }
 
+/* .link__fondo:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(0, 141, 235);
+    height: -3px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+} */
+
+
 .txt{
     position: relative;
     top: -20px;
@@ -61,7 +72,7 @@
 
 .fa-arrow-left-long{
     position: relative;
-    top: 38px;
+    top: 50px;
     margin-right: 30px;
 }
 
@@ -74,8 +85,17 @@
 }
 
 .icon__subMenu{
+    position: relative;
     border: 1px solid rgba(0,0,0,0.4);
     padding: 20px 0;
+}
+
+.menu__segundario{
+    position: absolute;
+    top: -10px;
+    left: 20%;
+    color: red;
+    /* font-size: 9em; */
 }
 
 .icon__txt{
@@ -110,6 +130,40 @@
 .sub__link{
     text-decoration: none;
     color: black;
+    width: fit-content;
+    z-index: 0;
+    transition: all 450ms ease;
+    position: relative;
+}
+
+.sub__link::after{
+    content: '';
+    position: absolute;
+    transition: width 540ms, opacity 300ms ease
+}
+
+.sub__link::before{
+    content: '';
+    position: absolute;
+    transition: width 540ms, opacity 300ms ease;
+}
+
+.sub__link::before{
+    content: attr(data);
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: rgb(0, 141, 235);
+    z-index: 1;
+    overflow: hidden;
+    /* text-shadow: 0 0 2px rgb(0, 141, 235); */
+    transition: all 480ms ease-in-out;
+}
+
+.sub__link:hover::before{
+    width: 100%;
+    color: rgb(0, 141, 235);
 }
 
 .principal{
@@ -129,6 +183,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5%;
+    margin-bottom: 550px;
 }
 
 .asientos__nombre{
@@ -206,22 +261,83 @@
     /* margin-bottom: -30%; */
 }
 
-.footer__asientos{
-    position: relative;
-    top: 520px;
+.subDivision{
+    margin-top: -500px;
+}
+
+
+
+@media screen and (min-width:550px) {
+    .container__asientos{
+        cursor: pointer;
+        position: relative;
+        top: -60px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5%;
+        margin-bottom: 650px;
+    }
+    
+}
+
+@media screen and (min-width:700px) {
+    .container__asientos{
+        cursor: pointer;
+        position: relative;
+        top: -60px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5%;
+        margin-bottom: 810px;
+    }
+
+    .subDivision{
+        margin-top: -600px;
+    }
+    
 }
 
 @media screen and (min-width:820px) {
+    .fondo__sillas{
+        position: relative;
+        margin: 0% -5.6% 0% -5.6%;
+        top: 70px;
+        margin-bottom: 200px;
+    }
+    
+    .fondo__sillas:before{
+        height: 400px;
+    }
+    
+    .fondo__img{
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        height: 400px;
+    }
+
     .container__asientos{
-        grid-template-columns: repeat(3, 1fr);   
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 300px;
     }
 
     .asientos{
-        margin-bottom: -2%;
+        margin-bottom: -20%;
+    }
+
+    .subDivision{
+        margin-top: -250px;
     }
 }
 
 @media screen and (min-width:1024px){
+    .fondo__sillas{
+        position: relative;
+        margin: 0% -7.9% 0% -5%;
+        top: 70px;
+        margin-bottom: 200px;
+    }
+
     .container__general--asientos{
         cursor: pointer;
         position: relative;
@@ -264,9 +380,46 @@
         position: relative;
         top: -100px;
         display: grid;
-        grid-template-columns: 0% 100%;
+        grid-template-columns: 0% 104%;
+    }
+    
+    .container__asientos{
+        margin-bottom: 40%;
+    }
+
+    .main{
+        margin: 0 7% 0 4.5%;
+    }
+    
+}
+
+@media screen and (min-width:1400px) {
+    .main{
+        margin: 0 7% 0 4.5%;
+    }
+
+    .container-btn{
+        cursor: pointer;
+        position: relative;
+        top: -100px;
+        display: grid;
+        grid-template-columns: 0% 103%;
+    }
+
+    .container__general--asientos{
+        cursor: pointer;
+        position: relative;
+        top: 10px;
+        display: grid;
+        grid-template-columns: 23% 80%;
+    }
+
+    .subDivision{
+        margin-top: -280px;
     }
 }
+
+
 
 /* nueva animacion para los botones  */
 /* .btn{
