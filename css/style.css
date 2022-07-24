@@ -38,7 +38,7 @@ body{
 .main-header__txt{
     position: absolute;
     padding: 17px 0px 0px 0px;
-    left: 45%;
+    left: 38%;
     color: black;
     margin: auto;
     font-weight: 500;
@@ -236,6 +236,18 @@ body{
     margin: 5px 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2em;
+}
+
+.contianer__whatsapp{
+    position: fixed;
+    top: 850px;
+    right: 5%;
+    z-index: 10000;
+}
+
+
+.img__whatsapp{
+    width: 100px;
 }
 
 .main{
